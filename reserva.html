@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <h1>Rserve Sua Viagem</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+            <input type="checkbox" id="passagens" name="servicos" value="passagens">
+            <label for="passagens">Compra de Passagens</label><br>
+    
+            <input type="checkbox" id="hospedagem" name="servicos" value="hospedagem">
+            <label for="hospedagem">Reserva de Hospedagem</label><br>
+    
+            <input type="checkbox" id="veiculos" name="servicos" value="veiculos">
+            <label for="veiculos">Aluguel de Veículos</label><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <input type="radio" id="credito" name="pagamento" value="credito" required>
+            <label for="credito">Cartão de Crédito</label><br>
+    
+            <input type="radio" id="boleto" name="pagamento" value="boleto">
+            <label for="boleto">Boleto</label><br>
+    
+            <input type="radio" id="pix" name="pagamento" value="pix">
+            <label for="pix">PIX</label><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <label for="prazo">Selecione o prazo:</label>
+            <select id="prazo" name="prazo" required>
+                <option value="avista">À Vista</option>
+                <option value="cinco_vezes">Cinco Vezes Sem Juros</option>
+                <option value="dez_vezes">Dez Vezes Com Juros</option>
+            </select>
+        </fieldset>
+    
+        <br>
+        <input type="submit" value="Enviar" href="reserva.html">
+    </form>
+    
+</body>
+</html>
